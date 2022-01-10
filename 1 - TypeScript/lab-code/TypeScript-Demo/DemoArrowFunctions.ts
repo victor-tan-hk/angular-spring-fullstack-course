@@ -47,17 +47,9 @@ for (let i = 0; i < simpleNumArray.length; i++) {
     newArrayResult.push(simpleNumArray[i] + 3);
 }
 
-function getArrayContentAsString(numArray: number[]) : string {
-    let accString:string = '';
-    for (let num of numArray) {
-        accString += ' ' + num;
-    }
-    return accString;
-}
 
 console.log("contents of newArrayResult using old approach");
 console.log(newArrayResult);
-
 
 // We can use the array map function with an arrow function to accomplish the same thing
 newArrayResult = simpleNumArray.map(item => item + 3);

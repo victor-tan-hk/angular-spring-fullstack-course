@@ -57,35 +57,6 @@ class Car {
 
 }
 
-class User {
-
-    /* Parameter properties provide a shortcut for 
-    declaring properties and initializing them in a constructor
-     */
-
-    constructor(
-        name: string,
-        surname: string,
-        age: number
-    ) { }
-
-    // The declaration above is equivalent to the declaration below
-    /* 
-        name: string;
-        surname: string;
-        age: number;
-    
-        constructor(name: string, surname: string, age: number) {
-            this.name = name;
-            this.surname = surname;
-            this.age = age;
-        }
-    
-      */
-}
-
-let user1 = new User("peter", "parker", 32);
-let user2 = new User("bruce", "banner", 40);
 
 // There are 3 access specifiers:
 // private, protected and public (default)
@@ -164,6 +135,38 @@ let employee1 = new Employee("Thor", 200, false, "A12345");
 // this is possible since employeeId is public
 employee1.employeeId = "B999";
 console.log(employee1.getHumanDetails());
+
+
+class User {
+
+    /* Parameter properties provide a shortcut for 
+    declaring properties and initializing them in a constructor
+     */
+
+    constructor(
+        public name: string,
+        private surname: string,
+        protected age: number
+    ) { }
+
+    // The declaration above is equivalent to the declaration below
+    /* 
+        name: string;
+        surname: string;
+        age: number;
+    
+        constructor(name: string, surname: string, age: number) {
+            this.name = name;
+            this.surname = surname;
+            this.age = age;
+        }
+    
+      */
+}
+
+let user1 = new User("peter", "parker", 32);
+let user2 = new User("bruce", "banner", 40);
+
 
 
 
