@@ -15,10 +15,10 @@ returns a string which CANNOT be assigned to non-string element properties -->
 <br>
 
 <!-- Using property binding -->
-<img [src]="'../assets/' + imageName + '.jpg'" alt="some animal"/>
+<img [src]="'/assets/' + imageName + '.jpg'" alt="some animal"/>
 <br>
 <!-- Using interpolation -->
-<img src="{{'../assets/' + imageName + '.jpg'}}" alt="some animal"/>
+<img src="{{'/assets/' + imageName + '.jpg'}}" alt="some animal"/>
 <br>
 
 <!-- Using property binding -->
