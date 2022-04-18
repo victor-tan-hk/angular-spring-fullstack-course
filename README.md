@@ -1,4 +1,3 @@
-# Full Stack Dev: Angular + Spring Boot
+# Angular Quick Start
 # 
-# Angular course - Jan 2022
-# Spring Boot - Mar 2022
+# 18, 28 Apr 2022
